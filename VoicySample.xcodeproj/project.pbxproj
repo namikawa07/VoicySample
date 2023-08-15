@@ -14,6 +14,15 @@
 		E1303AA32A8BC72B0055A37C /* VoicySampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AA22A8BC72B0055A37C /* VoicySampleTests.swift */; };
 		E1303AAD2A8BC72B0055A37C /* VoicySampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AAC2A8BC72B0055A37C /* VoicySampleUITests.swift */; };
 		E1303AAF2A8BC72B0055A37C /* VoicySampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AAE2A8BC72B0055A37C /* VoicySampleUITestsLaunchTests.swift */; };
+		E1303ABF2A8BC8140055A37C /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303ABE2A8BC8140055A37C /* AuthView.swift */; };
+		E1303AC12A8BC8440055A37C /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AC02A8BC8440055A37C /* AuthPresenter.swift */; };
+		E1303AC32A8BC8570055A37C /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AC22A8BC8570055A37C /* AuthInteractor.swift */; };
+		E1303AC52A8BC8670055A37C /* AuthContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AC42A8BC8670055A37C /* AuthContract.swift */; };
+		E1303AC72A8BC8770055A37C /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AC62A8BC8770055A37C /* AuthRouter.swift */; };
+		E1303AC92A8BC8890055A37C /* AuthEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AC82A8BC8890055A37C /* AuthEntity.swift */; };
+		E1303ACC2A8BCB590055A37C /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1303ACB2A8BCB590055A37C /* ImageAssets.xcassets */; };
+		E1303ACF2A8BCB730055A37C /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1303ACE2A8BCB730055A37C /* ColorAssets.xcassets */; };
+		E1303AD42A8BCF980055A37C /* AuthButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AD32A8BCF980055A37C /* AuthButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		E1303AA82A8BC72B0055A37C /* VoicySampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoicySampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1303AAC2A8BC72B0055A37C /* VoicySampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicySampleUITests.swift; sourceTree = "<group>"; };
 		E1303AAE2A8BC72B0055A37C /* VoicySampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicySampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1303ABE2A8BC8140055A37C /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		E1303AC02A8BC8440055A37C /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		E1303AC22A8BC8570055A37C /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		E1303AC42A8BC8670055A37C /* AuthContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContract.swift; sourceTree = "<group>"; };
+		E1303AC62A8BC8770055A37C /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		E1303AC82A8BC8890055A37C /* AuthEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEntity.swift; sourceTree = "<group>"; };
+		E1303ACB2A8BCB590055A37C /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
+		E1303ACE2A8BCB730055A37C /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		E1303AD32A8BCF980055A37C /* AuthButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +112,11 @@
 		E1303A902A8BC72A0055A37C /* VoicySample */ = {
 			isa = PBXGroup;
 			children = (
+				E1303ACA2A8BCAF50055A37C /* Resources */,
+				E1303ABC2A8BC7EB0055A37C /* Widget */,
+				E1303ABB2A8BC7D10055A37C /* Screen */,
 				E1303A912A8BC72A0055A37C /* VoicySampleApp.swift */,
 				E1303A932A8BC72A0055A37C /* ContentView.swift */,
-				E1303A952A8BC72B0055A37C /* Assets.xcassets */,
 				E1303A972A8BC72B0055A37C /* Preview Content */,
 			);
 			path = VoicySample;
@@ -125,6 +145,53 @@
 				E1303AAE2A8BC72B0055A37C /* VoicySampleUITestsLaunchTests.swift */,
 			);
 			path = VoicySampleUITests;
+			sourceTree = "<group>";
+		};
+		E1303ABB2A8BC7D10055A37C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E1303ABD2A8BC7F60055A37C /* Auth */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		E1303ABC2A8BC7EB0055A37C /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E1303AD02A8BCEA80055A37C /* Auth */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		E1303ABD2A8BC7F60055A37C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E1303ABE2A8BC8140055A37C /* AuthView.swift */,
+				E1303AC02A8BC8440055A37C /* AuthPresenter.swift */,
+				E1303AC22A8BC8570055A37C /* AuthInteractor.swift */,
+				E1303AC42A8BC8670055A37C /* AuthContract.swift */,
+				E1303AC62A8BC8770055A37C /* AuthRouter.swift */,
+				E1303AC82A8BC8890055A37C /* AuthEntity.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E1303ACA2A8BCAF50055A37C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1303A952A8BC72B0055A37C /* Assets.xcassets */,
+				E1303ACB2A8BCB590055A37C /* ImageAssets.xcassets */,
+				E1303ACE2A8BCB730055A37C /* ColorAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1303AD02A8BCEA80055A37C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E1303AD32A8BCF980055A37C /* AuthButtonView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +300,8 @@
 			files = (
 				E1303A992A8BC72B0055A37C /* Preview Assets.xcassets in Resources */,
 				E1303A962A8BC72B0055A37C /* Assets.xcassets in Resources */,
+				E1303ACF2A8BCB730055A37C /* ColorAssets.xcassets in Resources */,
+				E1303ACC2A8BCB590055A37C /* ImageAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1303AD42A8BCF980055A37C /* AuthButtonView.swift in Sources */,
+				E1303AC72A8BC8770055A37C /* AuthRouter.swift in Sources */,
+				E1303AC12A8BC8440055A37C /* AuthPresenter.swift in Sources */,
+				E1303AC92A8BC8890055A37C /* AuthEntity.swift in Sources */,
+				E1303AC32A8BC8570055A37C /* AuthInteractor.swift in Sources */,
 				E1303A942A8BC72A0055A37C /* ContentView.swift in Sources */,
+				E1303AC52A8BC8670055A37C /* AuthContract.swift in Sources */,
 				E1303A922A8BC72A0055A37C /* VoicySampleApp.swift in Sources */,
+				E1303ABF2A8BC8140055A37C /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
