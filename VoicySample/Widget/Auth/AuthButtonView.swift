@@ -24,7 +24,7 @@ struct AuthButtonView: View {
                 Spacer()
                 
             }
-            .padding(10)
+            .padding(6)
             .frame(maxWidth: .infinity)
             .background(Color(backgroundColor))
             .foregroundColor(.white)

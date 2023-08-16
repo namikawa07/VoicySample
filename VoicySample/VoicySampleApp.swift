@@ -11,7 +11,10 @@ import SwiftUI
 struct VoicySampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let entity = AuthEntity(isLoaded: false) // ここで適切な値を設定する必要があります
+            let presenter = AuthPresenter(entity: entity)
+                        
+            AuthView(entity: entity, presenter: presenter)
         }
     }
 }

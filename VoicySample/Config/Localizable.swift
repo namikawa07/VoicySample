@@ -28,6 +28,7 @@ struct Localizable {
         static let Black = "ColorBlack"
         static let Blue = "ColorBlue"
         static let LightBlue = "ColorLightBlue"
+        static let orange = "ColorOrange"
     }
 }
 

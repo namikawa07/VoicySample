@@ -7,18 +7,15 @@
 //データを保持しておき永続化するために使用する
 import Foundation
 
-final class AuthEntity {
+//AuthViewでisLoadedを監視するために @ObservedObject var entity: AuthEntityと書いているのでAuthEntityはObservableObjectを継承しておかないといけない
+final class AuthEntity: ObservableObject {
     // letは不変 varは可変
-    let section: AuthButtonSection
-    var action: () -> Void = {}
+    @Published var isLoaded: Bool
     
     //swiftは全てのclassがイニシャライズしないといけないルールがある
-    // TODO:@escapingについてコメント書く
-    init(section: AuthButtonSection,
-         action: @escaping () -> Void
+    init(isLoaded: Bool
     ){
-        self.section = section
-        self.action = action
+        self.isLoaded = isLoaded
     }
 }
 
