@@ -10,6 +10,8 @@
 import SwiftUI
 
 struct AuthView: View {
+    var presenter: AuthPresenter
+    
     var body: some View {
         VStack {
             Image("Logo")
@@ -17,11 +19,10 @@ struct AuthView: View {
                 .scaledToFit()
                 .frame(width:220)
             
-            
-            AuthButtonView(buttonText: "Googleで始める", buttonIcon: "Google", backgroundColor: "ColorRed", action: {})
-            AuthButtonView(buttonText: "Appleで始める", buttonIcon: "Apple", backgroundColor: "ColorBlack", action: {})
-            AuthButtonView(buttonText: "Facebookで始める", buttonIcon: "Facebook", backgroundColor: "ColorBlue", action: {})
-            AuthButtonView(buttonText: "Twitterで始める", buttonIcon: "Twitter", backgroundColor: "ColorLightBlue", action: {})
+            ForEach(AuthButtonSection.allCases, id: \.self) { section in
+                AuthButtonView(buttonText: section.authButtonText, buttonIcon: section.authButtonIcon, backgroundColor: section.authBackgroundColor, action: presenter.onTapAuthButton)
+            }
+
             Button(action: {}){
                 HStack(alignment: .center){
                     Text("メールアドレスで登録")
@@ -51,6 +52,7 @@ struct AuthView: View {
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView()
+        let presenter = AuthPresenter()
+        AuthView(presenter: presenter)
     }
 }

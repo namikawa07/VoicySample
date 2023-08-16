@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  VoicySample
+
+  Created by 並川樹 on 2023/08/16.
+  
+*/
+
+
+"Apple" = "Apple";
+"Google" = "Google";
+"Facebook" = "Facebook";
+"Twitter" = "Twitter";
+"AuthApple" = "Appleで始める";
+"AuthGoogle" = "Googleで始める";
+"AuthFacebook" = "Facebookで始める";
+"AuthTwitter" = "Twitterで始める";
+
+/* color */
+"ColorRed" = "ColorRed";
+"ColorBlack" = "ColorBlack";
+"ColorBlue" = "ColorBlue";
+"ColorLightBlue" = "ColorLightBlue";

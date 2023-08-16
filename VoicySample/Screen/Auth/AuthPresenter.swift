@@ -18,21 +18,20 @@ private let authSections: [AuthButtonSection] = [
 ]
 
 // finalをつけることでAuthPresenterクラスはこれ以上継承できなくなる
-final class AuthPresenter {
+final class AuthPresenter: AuthPresenterProtocol {
     // interactorプロトコルからinteractorインスタンスを作成
     // 確実にnilではない場合に!をつけるinteracoterがnilの場合にはランタイムエラーが表示される
     private var interactor: AuthInteractorProtocol!
     
     //injectでこのAuthPresenterにinteractorの依存性を注入している
-    // これによってAuthPresenterはAuthInteractorに依存するようになる
+    //これによってAuthPresenterはAuthInteractorに依存するようになる
     //injectはインスタンス生成後に依存性を注入できるもの
     func inject(interactor: AuthInteractorProtocol) {
         self.interactor = interactor
     }
     
-    // onViewDidLoadで配列の中にデータを入れ込んでViewで配列を回すことによって表示させてる
-    func onViewDidLoad() {
-        interactor.entity
+    func onTapAuthButton() {
+        // interactor.entity.authBackgroundColors
     }
    
 }
