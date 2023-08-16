@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  VoicySample
+
+  Created by 並川樹 on 2023/08/16.
+  
+*/
+
+
+"Apple" = "Apple";
+"Google" = "Google";
+"Facebook" = "Facebook";
+"Twitter" = "Twitter";
+"LINE" = "LINE";
+"AuthApple" = "Appleで始める";
+"AuthGoogle" = "Googleで始める";
+"AuthFacebook" = "Facebookで始める";
+"AuthTwitter" = "Twitterで始める";
+"AuthLINE" = "LINEで始める";
+"AuthEmail" = "メールアドレスで登録";
+"AlreadyHasAccount" = "アカウントをお持ちの方は";
+"Login" = "ログイン";
+"LoginConfirm" = "あなたの権利やVoicyという場を守るため、利用規約とプライバシーポリシーへの同意にご協力お願いいたします";
+
+/* color */
+"ColorRed" = "ColorRed";
+"ColorBlack" = "ColorBlack";
+"ColorBlue" = "ColorBlue";
+"ColorLightBlue" = "ColorLightBlue";
+"ColorOrange" = "ColorOrange";
+"ColorGreen" = "ColorGreen";
+"ColorLightGray" = "ColorLightGray";
