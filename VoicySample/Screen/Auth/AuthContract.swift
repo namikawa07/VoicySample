@@ -7,14 +7,31 @@
 // protocolを定義する際に使用する
 import Foundation
 
+// interactor
 protocol AuthInteractorProtocol {
-    
+    func firebaseAuthenticationGoogle()
+    func firebaseAuthenticationApple()
+    func firebaseAuthenticationLINE()
+    func firebaseAuthenticationTwitter()
+    func firebaseAuthenticationFacebook()
 }
 
+// router
 protocol AuthRouterProtocol {
-    
+    func transitionHomeScreen()
 }
 
+// presenter
 protocol AuthPresenterProtocol {
-    func onTapAuthButton(section: AuthButtonSection)
+    func onTapAuthButton()
+    func tapOpenDialog(section: AuthButtonSection)
+    func tapCloseDialog()
+}
+
+protocol AuthPresenterAuthenticateProtocol {
+    func authenticateWithGoogle()
+    func authenticateWithApple()
+    func authenticateWithFacebook()
+    func authenticateWithTwitter()
+    func authenticateWithLINE()
 }

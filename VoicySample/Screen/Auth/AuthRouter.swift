@@ -6,3 +6,9 @@
 //
 //画面遷移させる時に使用する
 import Foundation
+
+final class AuthRouter: AuthRouterProtocol {
+    func transitionHomeScreen() {
+        // homeに画面遷移させる
+    }
+}

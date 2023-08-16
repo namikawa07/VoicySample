@@ -11,6 +11,8 @@ import Foundation
 final class AuthEntity: ObservableObject {
     // letは不変 varは可変
     @Published var isLoaded: Bool
+    @Published var showConfirmView: Bool = false
+    var selectedSection: AuthButtonSection? = nil
     
     //swiftは全てのclassがイニシャライズしないといけないルールがある
     init(isLoaded: Bool

@@ -118,6 +118,7 @@
 		E1303A902A8BC72A0055A37C /* VoicySample */ = {
 			isa = PBXGroup;
 			children = (
+				E1303AE02A8D26050055A37C /* Service */,
 				E1303AD52A8CD3820055A37C /* Config */,
 				E1303ACA2A8BCAF50055A37C /* Resources */,
 				E1303ABC2A8BC7EB0055A37C /* Widget */,
@@ -209,6 +210,21 @@
 				E1303ADA2A8CD42C0055A37C /* Localizable.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		E1303AE02A8D26050055A37C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E1303AE12A8D260D0055A37C /* UserService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E1303AE12A8D260D0055A37C /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
