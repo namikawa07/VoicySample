@@ -20,12 +20,12 @@ struct AuthView: View {
                 .frame(width:220)
             
             ForEach(AuthButtonSection.allCases, id: \.self) { section in
-                AuthButtonView(buttonText: section.authButtonText, buttonIcon: section.authButtonIcon, backgroundColor: section.authBackgroundColor, action: presenter.onTapAuthButton)
+                AuthButtonView(buttonText: section.authButtonText, buttonIcon: section.authButtonIcon, backgroundColor: section.authBackgroundColor, action: {presenter.onTapAuthButton(section: section)})
             }
 
             Button(action: {}){
                 HStack(alignment: .center){
-                    Text("メールアドレスで登録")
+                    Text(Localizable.Auth.email.localized)
                 }
                 .padding(10)
                 .frame(maxWidth: .infinity)
@@ -38,10 +38,11 @@ struct AuthView: View {
                 )
             }
             .padding(50)
+            
             HStack(){
-                Text("アカウントを持ちの方は")
+                Text(Localizable.Auth.alreadyHasAccount.localized)
                     .font(.system(size: 14))
-                Text("ログイン")
+                Text(Localizable.Auth.login.localized)
                     .font(.system(size: 14))
                     .foregroundColor(Color("ColorOrange"))
             }

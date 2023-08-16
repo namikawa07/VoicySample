@@ -18,7 +18,7 @@ private let authSections: [AuthButtonSection] = [
 ]
 
 // finalをつけることでAuthPresenterクラスはこれ以上継承できなくなる
-final class AuthPresenter: AuthPresenterProtocol {
+final class AuthPresenter: AuthPresenterProtocol {    
     // interactorプロトコルからinteractorインスタンスを作成
     // 確実にnilではない場合に!をつけるinteracoterがnilの場合にはランタイムエラーが表示される
     private var interactor: AuthInteractorProtocol!
@@ -30,8 +30,33 @@ final class AuthPresenter: AuthPresenterProtocol {
         self.interactor = interactor
     }
     
-    func onTapAuthButton() {
-        // interactor.entity.authBackgroundColors
+    func onTapAuthButton(section: AuthButtonSection) {
+        switch section {
+        case .google:
+            authenticateWithGoogle()
+        case .apple:
+            authenticateWithApple()
+        case .facebook:
+            authenticateWithFacebook()
+        case .twitter:
+            authenticateWithTwitter()
+        }
+    }
+    
+    func authenticateWithGoogle() {
+        
+    }
+    
+    func authenticateWithApple() {
+        
+    }
+    
+    func authenticateWithFacebook() {
+        
+    }
+    
+    func authenticateWithTwitter() {
+        
     }
    
 }

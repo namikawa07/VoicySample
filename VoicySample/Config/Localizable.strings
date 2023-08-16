@@ -15,6 +15,9 @@
 "AuthGoogle" = "Googleで始める";
 "AuthFacebook" = "Facebookで始める";
 "AuthTwitter" = "Twitterで始める";
+"AuthEmail" = "メールアドレスで登録";
+"AlreadyHasAccount" = "アカウントをお持ちの方は";
+"Login" = "ログイン";
 
 /* color */
 "ColorRed" = "ColorRed";

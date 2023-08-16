@@ -16,5 +16,5 @@ protocol AuthRouterProtocol {
 }
 
 protocol AuthPresenterProtocol {
-    func onTapAuthButton()
+    func onTapAuthButton(section: AuthButtonSection)
 }
