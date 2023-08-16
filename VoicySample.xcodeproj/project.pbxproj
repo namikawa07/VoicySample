@@ -25,6 +25,7 @@
 		E1303AD42A8BCF980055A37C /* AuthButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AD32A8BCF980055A37C /* AuthButtonView.swift */; };
 		E1303AD72A8CD39A0055A37C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1303AD62A8CD39A0055A37C /* Localizable.strings */; };
 		E1303ADB2A8CD42C0055A37C /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303ADA2A8CD42C0055A37C /* Localizable.swift */; };
+		E1303ADD2A8CF4DB0055A37C /* AuthConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303ADC2A8CF4DB0055A37C /* AuthConfirmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		E1303AD32A8BCF980055A37C /* AuthButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonView.swift; sourceTree = "<group>"; };
 		E1303AD62A8CD39A0055A37C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E1303ADA2A8CD42C0055A37C /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		E1303ADC2A8CF4DB0055A37C /* AuthConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				E1303AD32A8BCF980055A37C /* AuthButtonView.swift */,
+				E1303ADC2A8CF4DB0055A37C /* AuthConfirmView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			files = (
 				E1303AD42A8BCF980055A37C /* AuthButtonView.swift in Sources */,
 				E1303AC72A8BC8770055A37C /* AuthRouter.swift in Sources */,
+				E1303ADD2A8CF4DB0055A37C /* AuthConfirmView.swift in Sources */,
 				E1303ADB2A8CD42C0055A37C /* Localizable.swift in Sources */,
 				E1303AC12A8BC8440055A37C /* AuthPresenter.swift in Sources */,
 				E1303AC92A8BC8890055A37C /* AuthEntity.swift in Sources */,

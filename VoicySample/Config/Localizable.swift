@@ -24,6 +24,7 @@ struct Localizable {
         static let email = "AuthEmail"
         static let alreadyHasAccount = "AlreadyHasAccount"
         static let login = "Login"
+        static let loginConfirm = "LoginConfirm"
     }
     struct AuthColor {
         static let Red = "ColorRed"

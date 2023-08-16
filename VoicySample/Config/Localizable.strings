@@ -20,6 +20,7 @@
 "AuthEmail" = "メールアドレスで登録";
 "AlreadyHasAccount" = "アカウントをお持ちの方は";
 "Login" = "ログイン";
+"LoginConfirm" = "あなたの権利やVoicyという場を守るため、利用規約とプライバシーポリシーへの同意にご協力お願いいたします";
 
 /* color */
 "ColorRed" = "ColorRed";

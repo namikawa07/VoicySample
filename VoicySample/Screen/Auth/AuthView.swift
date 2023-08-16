@@ -63,9 +63,8 @@ struct AuthView: View {
             }
             .opacity(entity.isLoaded ? 1 : 0)
             .animation(.easeInOut(duration: 0.5), value: entity.isLoaded)
-            
-            
         }
+        
     }
 }
 
