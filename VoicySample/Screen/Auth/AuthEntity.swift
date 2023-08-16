@@ -24,6 +24,7 @@ final class AuthEntity: ObservableObject {
 enum AuthButtonSection: CaseIterable {
     case google
     case apple
+    case line
     case facebook
     case twitter
     
@@ -34,6 +35,8 @@ enum AuthButtonSection: CaseIterable {
             return L.google.localized
         case .apple:
             return L.apple.localized
+        case .line:
+            return L.line.localized
         case .facebook:
             return L.facebook.localized
         case .twitter:
@@ -48,6 +51,8 @@ enum AuthButtonSection: CaseIterable {
             return L.google.localized
         case .apple:
             return L.apple.localized
+        case .line:
+            return L.line.localized
         case .facebook:
             return L.facebook.localized
         case .twitter:
@@ -63,6 +68,8 @@ enum AuthButtonSection: CaseIterable {
             return L.Red.localized
         case .apple:
             return L.Black.localized
+        case .line:
+            return L.Green.localized
         case .facebook:
             return L.Blue.localized
         case .twitter:

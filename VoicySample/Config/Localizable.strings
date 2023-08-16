@@ -11,10 +11,12 @@
 "Google" = "Google";
 "Facebook" = "Facebook";
 "Twitter" = "Twitter";
+"LINE" = "LINE";
 "AuthApple" = "Appleで始める";
 "AuthGoogle" = "Googleで始める";
 "AuthFacebook" = "Facebookで始める";
 "AuthTwitter" = "Twitterで始める";
+"AuthLINE" = "LINEで始める";
 "AuthEmail" = "メールアドレスで登録";
 "AlreadyHasAccount" = "アカウントをお持ちの方は";
 "Login" = "ログイン";
@@ -25,3 +27,5 @@
 "ColorBlue" = "ColorBlue";
 "ColorLightBlue" = "ColorLightBlue";
 "ColorOrange" = "ColorOrange";
+"ColorGreen" = "ColorGreen";
+"ColorLightGray" = "ColorLightGray";

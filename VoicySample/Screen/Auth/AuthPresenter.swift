@@ -49,6 +49,8 @@ final class AuthPresenter: AuthPresenterProtocol {
             authenticateWithGoogle()
         case .apple:
             authenticateWithApple()
+        case .line:
+            authenticateWithLINE()
         case .facebook:
             authenticateWithFacebook()
         case .twitter:
@@ -69,6 +71,10 @@ final class AuthPresenter: AuthPresenterProtocol {
     }
     
     func authenticateWithTwitter() {
+        
+    }
+    
+    func authenticateWithLINE() {
         
     }
    

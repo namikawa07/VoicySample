@@ -20,7 +20,7 @@ struct AuthView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width:220)
-                .offset(y: entity.isLoaded ? 0 : 150)
+                .offset(y: entity.isLoaded ? 0 : 170)
                 .animation(.easeInOut(duration: 0.5), value: entity.isLoaded)
                 .zIndex(2)
             VStack {
@@ -32,6 +32,8 @@ struct AuthView: View {
                 Button(action: {}){
                     HStack(alignment: .center){
                         Text(Localizable.Auth.email.localized)
+                            .font(.system(size: 13))
+                            .fontWeight(.bold)
                     }
                     .padding(10)
                     .frame(maxWidth: .infinity)
@@ -40,17 +42,23 @@ struct AuthView: View {
                     .cornerRadius(25)
                     .overlay(
                         RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color.gray, lineWidth: 1)
+                            .stroke(Color(Localizable.Color.LightGray.localized), lineWidth: 1)
                     )
                 }
-                .padding(50)
+                .padding(.horizontal, 50)
+                
+                Rectangle()
+                    .fill(Color(Localizable.Color.LightGray.localized)) // 線の色
+                    .frame(height: 1) // 線の太さ
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 30)
                 
                 HStack(){
                     Text(Localizable.Auth.alreadyHasAccount.localized)
                         .font(.system(size: 14))
                     Text(Localizable.Auth.login.localized)
                         .font(.system(size: 14))
-                        .foregroundColor(Color(Localizable.AuthColor.orange.localized))
+                        .foregroundColor(Color(Localizable.AuthColor.Orange.localized))
                 }
             }
             .opacity(entity.isLoaded ? 1 : 0)
