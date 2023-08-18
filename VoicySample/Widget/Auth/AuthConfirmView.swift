@@ -59,7 +59,7 @@ struct AuthConfirmView: View {
 
 struct AuthConfirmView_Previews: PreviewProvider {
     static var previews: some View {
-        let entity = AuthEntity(isLoaded: false)
+        let entity = AuthEntity(isLoaded: false, currentAuthType: .signup)
         let router = AuthRouter()
         let interactor = AuthInteractor(entity: entity)
         var presenter = AuthPresenter(entity: entity, router: router, interactor: interactor)

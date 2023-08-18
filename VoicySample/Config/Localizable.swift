@@ -16,15 +16,23 @@ struct Localizable {
         static let line = "LINE"
     }
     struct Auth {
-        static let google = "AuthGoogle"
-        static let apple = "AuthApple"
-        static let facebook = "AuthFacebook"
-        static let twitter = "AuthTwitter"
-        static let line = "AuthLINE"
-        static let email = "AuthEmail"
+        static let google = "SignupGoogle"
+        static let apple = "SignupApple"
+        static let facebook = "SignupFacebook"
+        static let twitter = "SignupTwitter"
+        static let line = "SignupLINE"
+        static let email = "SignupEmail"
         static let alreadyHasAccount = "AlreadyHasAccount"
         static let login = "Login"
         static let loginConfirm = "LoginConfirm"
+    }
+    struct Login {
+        static let google = "SigninGoogle"
+        static let apple = "SigninApple"
+        static let facebook = "SigninFacebook"
+        static let twitter = "SigninTwitter"
+        static let line = "SigninLINE"
+        static let email = "SigninEmail"
     }
     struct AuthColor {
         static let Red = "ColorRed"

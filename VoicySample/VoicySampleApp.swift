@@ -11,7 +11,7 @@ import SwiftUI
 struct VoicySampleApp: App {
     var body: some Scene {
         WindowGroup {
-            let entity = AuthEntity(isLoaded: false)
+            let entity = AuthEntity(isLoaded: false, currentAuthType: .signup)
             let router = AuthRouter()
             let interactor = AuthInteractor(entity: entity)
             var presenter = AuthPresenter(entity: entity, router: router, interactor: interactor)
