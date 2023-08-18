@@ -27,6 +27,9 @@
 		E1303ADB2A8CD42C0055A37C /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303ADA2A8CD42C0055A37C /* Localizable.swift */; };
 		E1303ADD2A8CF4DB0055A37C /* AuthConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303ADC2A8CF4DB0055A37C /* AuthConfirmView.swift */; };
 		E1303AE52A8F363B0055A37C /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AE42A8F363B0055A37C /* CustomBackButton.swift */; };
+		E1303AEA2A8F4E0A0055A37C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AE92A8F4E0A0055A37C /* LoginView.swift */; };
+		E1303AEC2A8FA8BA0055A37C /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AEB2A8FA8BA0055A37C /* LoginEntity.swift */; };
+		E1303AEE2A8FAA6A0055A37C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1303AED2A8FAA6A0055A37C /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		E1303ADA2A8CD42C0055A37C /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		E1303ADC2A8CF4DB0055A37C /* AuthConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfirmView.swift; sourceTree = "<group>"; };
 		E1303AE42A8F363B0055A37C /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		E1303AE92A8F4E0A0055A37C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E1303AEB2A8FA8BA0055A37C /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		E1303AED2A8FAA6A0055A37C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 		E1303ABB2A8BC7D10055A37C /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				E1303AE82A8F4DF10055A37C /* Login */,
 				E1303ABD2A8BC7F60055A37C /* Auth */,
 			);
 			path = Screen;
@@ -228,6 +235,16 @@
 			children = (
 			);
 			path = UserService;
+			sourceTree = "<group>";
+		};
+		E1303AE82A8F4DF10055A37C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E1303AE92A8F4E0A0055A37C /* LoginView.swift */,
+				E1303AEB2A8FA8BA0055A37C /* LoginEntity.swift */,
+				E1303AED2A8FAA6A0055A37C /* LoginPresenter.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +389,11 @@
 				E1303AC32A8BC8570055A37C /* AuthInteractor.swift in Sources */,
 				E1303A942A8BC72A0055A37C /* ContentView.swift in Sources */,
 				E1303AC52A8BC8670055A37C /* AuthContract.swift in Sources */,
+				E1303AEE2A8FAA6A0055A37C /* LoginPresenter.swift in Sources */,
 				E1303AE52A8F363B0055A37C /* CustomBackButton.swift in Sources */,
+				E1303AEA2A8F4E0A0055A37C /* LoginView.swift in Sources */,
 				E1303A922A8BC72A0055A37C /* VoicySampleApp.swift in Sources */,
+				E1303AEC2A8FA8BA0055A37C /* LoginEntity.swift in Sources */,
 				E1303ABF2A8BC8140055A37C /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

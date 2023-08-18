@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        var entity = AuthEntity(isLoaded: false, currentAuthType: .signup)
+        var router = AuthRouter()
+        var interactor = AuthInteractor(entity: entity)
+        var presenter = AuthPresenter(entity: entity, router: router, interactor: interactor)
+        
+        NavigationView {
+            AuthView(entity: entity, presenter: presenter).navigationBarTitle("", displayMode: .inline)
         }
-        .padding()
     }
 }
 

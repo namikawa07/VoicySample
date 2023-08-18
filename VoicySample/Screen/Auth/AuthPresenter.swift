@@ -69,6 +69,10 @@ final class AuthPresenter: AuthPresenterProtocol {
         entity.selectedSection = section
     }
     
+    func tapEmailButton() {
+        entity.showConfirmView = true
+    }
+    
     func tapCloseDialog() {
         entity.showConfirmView = false
     }
